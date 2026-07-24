@@ -72,7 +72,7 @@ function App() {
               <Route path='/login' element={<GuestRoute><LoginPage /></GuestRoute>} />
               <Route path='/' element={<ProtectedRoute><RoastPage /></ProtectedRoute>} />
               <Route path='/favorites' element={<ProtectedRoute><FavoritesPage /></ProtectedRoute>} />
-              <Route path='*' element={<Navigate to="/register" replace />} />
+              <Route path='*' element={<Navigate to="/" replace />} />
 
            </Routes>
       </BrowserRouter>
