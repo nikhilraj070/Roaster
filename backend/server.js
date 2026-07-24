@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/roast", roastRoutes);
- const PORT = process.env.PORT || 8000
+ const PORT = process.env.PORT || 8000;
 const startServer = async () => {
   try {
     await connectDb();
