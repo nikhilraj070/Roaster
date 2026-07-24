@@ -93,6 +93,11 @@ export const register =async (req , res )=>{
 
 
    export const whoAmI  =(req , res)=>{
-     res.status(200).json({success: true,
+    try {
+       res.status(200).json({success: true,
         user: req.user})
+    } catch (error) {
+      return res.status(500).json({message:"Who ai Error",error:error?.message})
+    }
+    
    }
