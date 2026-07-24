@@ -5,21 +5,22 @@ import LoginPage from './components/LoginPage';
 import RoastPage from './components/RoastPage';
 import FavoritesPage from './components/FavoritesPage';
 import { useAuth } from './context/authContext';
+import { Loader2 } from 'lucide-react';
 
 function AuthLoading() {
   return (
     <div className="fixed inset-0 bg-[#0a0a0a] flex items-center justify-center overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute w-80 h-80 rounded-full bg-orange-500/10 blur-3xl animate-pulse" />
+      <div className="absolute w-80 h-80 rounded-full  blur-3xl animate-pulse" />
 
       <div className="relative z-10 flex flex-col items-center">
         {/* Logo */}
-        <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-2xl shadow-orange-500/30">
+        <div className="w-24 h-24 rounded-3xl  flex items-center justify-center ">
           <span className="text-4xl">🔥</span>
         </div>
 
         {/* Title */}
-        <h1 className="mt-6 text-3xl font-bold text-white tracking-wide">
+        <h1 className=" text-3xl font-bold text-white tracking-wide">
           Roaster
         </h1>
 
